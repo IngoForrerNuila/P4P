@@ -48,8 +48,13 @@ function add(){
 function validateForm() {
 
     let firstName =document.getElementById("fname").value;
-    
-    if(firstName==""){
+    let lastName =document.getElementById("lname").value;
+    let phone =document.getElementById("phone").value;
+    let email =document.getElementById("phone").value;
+    let issue =document.getElementById("issue").value;
+    let description =document.getElementById("description").value;
+
+    if(firstName, lastName, phone, email, issue, description==""){
         alert("NEIN!!! Please fill in with the correct information >:(");
         return false;
     }
