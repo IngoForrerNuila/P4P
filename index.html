@@ -26,11 +26,11 @@
             <label for="lname">Last name</label>
             <input type="text" id="lname" name="lname"><br>
 
-            <label for="company">Phone/Cel</label>
-            <input type="tel" id="company" name="company"><br>
+            <label for="phone">Phone/Cel</label>
+            <input type="tel" id="phone" name="phone"><br>
 
-            <label for="age">EMail</label>
-            <input type="email" id="age" name="age"><br>
+            <label for="email">EMail</label>
+            <input type="email" id="email" name="email"><br>
 
             <label for="issue">Issue</label>
             <input type="text" id="issue" name="issue"><br>
@@ -38,19 +38,19 @@
             <label for="description">Description</label>
             <textarea id="description" name="message" rows="10" cols="30"></textarea><br>
 
+            <button id="boton" class="btn btn-success" type="reset" onclick="validateForm();">Post</button>
             <input type="submit" value="Submit">
-            <button id="boton" class="btn btn-success" type="reset" onclick="validateForm();">Submit</button>
+            
         </form>
     </div>
-    <div class="col-sm-5"><p class="explanation">**SHARE YOUR PROBLEMS** <br> This is what we are prepared for! We are going to read your problems and find a solution and answer as fast as possible. 
-        <br>Submit your issue now and see how your problem is posted in our site, we know somebody here has a solution for you ;-)</p></div>
+    <div class="col-sm-5"><p class="explanation">**POST YOUR PROBLEMS** <br> This is what we are prepared for! We are going to read your problems and find a solution and answer as fast as possible, just post your problem or complaint here!</p></div>
     <div class="col-sm-5">
         <table class="table" id="table">
             <tr>
                 <th>Name</th>
                 <th>Last Name</th>
                 <th>Phone/Cell</th>
-                <th>Age</th>
+                <th>Email</th>
                 <th>Issue</th>
                 <th>Description</th>
                 <th>Reply</th>

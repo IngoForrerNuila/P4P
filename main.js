@@ -1,30 +1,30 @@
 function capture() {
     //console.log("captured");
 
-    function person(fname, lname, company, age, issue, description){
+    function person(fname, lname, phone, email, issue, description){
         this.fname=fname;    
         this.lname=lname;
-        this.company=company;            
-        this.age=age;
+        this.phone=phone;            
+        this.email=email;
         this.issue=issue;
         this.description=description;
 
     }
 var fnameCapture = document.getElementById("fname").value;
 var lnameCapture = document.getElementById("lname").value;
-var companyCapture = document.getElementById("company").value;
-var ageCapture = document.getElementById("age").value;
+var phoneCapture = document.getElementById("phone").value;
+var emailCapture = document.getElementById("email").value;
 var issueCapture = document.getElementById("issue").value;
 var descriptionCapture = document.getElementById("description").value;
 
-newPerson = new person(fnameCapture,lnameCapture,companyCapture,ageCapture,issueCapture,descriptionCapture);
+newPerson = new person(fnameCapture,lnameCapture,phoneCapture,emailCapture,issueCapture,descriptionCapture);
 console.log(newPerson);
 add();
 
 console.log(fnameCapture);
 console.log(lnameCapture);
-console.log(companyCapture);
-console.log(ageCapture);
+console.log(phoneCapture);
+console.log(emailCapture);
 console.log(issueCapture);
 console.log(descriptionCapture);
 }
@@ -37,8 +37,8 @@ function add(){
     
     dataBase.push(newPerson);
     console.log(dataBase);
-    document.getElementById("table").innerHTML += '<tbody><td>'+newPerson.fname+'</td><td>'+newPerson.lname+'</td>'+'<td>'+newPerson.company+'</td>'
-    +'<td>'+newPerson.age+'</td>'+'<td>'+newPerson.issue+'</td>'+'<td>'+newPerson.description+'</td>'+'<td>'+'<button id="btn" name="btn">Reply</button>'+'</td> </tbody>';
+    document.getElementById("table").innerHTML += '<tbody><td>'+newPerson.fname+'</td><td>'+newPerson.lname+'</td>'+'<td>'+newPerson.phone+'</td>'
+    +'<td>'+newPerson.email+'</td>'+'<td>'+newPerson.issue+'</td>'+'<td>'+newPerson.description+'</td>'+'<td>'+'<button id="btn" name="btn">Reply</button>'+'</td> </tbody>';
 
     alert("YES!!! Your complaint was successfuly delivered and registered :)")
     
