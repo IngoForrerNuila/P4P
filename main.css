@@ -31,7 +31,7 @@
 
 .explanation {
 font-weight:;
-font-size: 20px;
+font-size: 16px;
 text-align: center;
 color: rgb(0, 0, 0);
 
@@ -49,5 +49,13 @@ text-align: center;
 .disclaimer2 {
     text-align: center;
     font-size: 8px;
+
+}
+
+#adver {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 
 }
